@@ -1,4 +1,4 @@
-# 🖼️ Image Describer & Renamer
+# Image Describer & Renamer
 
 **AI-powered image renaming tool — runs fully offline using local Moondream2 GGUF models.**
 
@@ -10,16 +10,16 @@ No internet required. No API keys. Everything runs on your machine.
 
 ## ✨ Features
 
-- 🤖 **Local AI vision** — uses [Moondream2 GGUF](https://huggingface.co/ggml-org/moondream2-20250414-GGUF/tree/main) via `llama-cpp-python`, no cloud calls
-- 📝 **OCR integration** — EasyOCR extracts visible text (titles, labels) and appends it to the name
-- 🧪 **Dry run mode** — preview all generated names before touching any files
-- 🔁 **Collision handling** — duplicate names automatically get a numeric suffix
-- 🎨 **Dark UI** — clean tkinter interface with live log and progress bar
-- 📁 **Portable** — move the whole folder anywhere, just keep `models/` next to `app.py`
+- **Local AI vision** — uses [Moondream2 GGUF](https://huggingface.co/ggml-org/moondream2-20250414-GGUF/tree/main) via `llama-cpp-python`, no cloud calls
+- **OCR integration** — EasyOCR extracts visible text (titles, labels) and appends it to the name
+- **Dry run mode** — preview all generated names before touching any files
+- **Collision handling** — duplicate names automatically get a numeric suffix
+- **Dark UI** — clean tkinter interface with live log and progress bar
+- **Portable** — move the whole folder anywhere, just keep `models/` next to `app.py`
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - **Python 3.10 – 3.12** (get it from [python.org](https://python.org) — check *Add Python to PATH* during install)
 - **~4 GB free disk space** for the models
@@ -27,7 +27,7 @@ No internet required. No API keys. Everything runs on your machine.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1 — Download the models
 
@@ -60,7 +60,7 @@ python app.py
 
 ---
 
-## 🖥️ How to Use
+## How to Use
 
 1. The app auto-detects models from the `models/` folder on launch
 2. Click **Browse** and select your image folder
@@ -70,7 +70,7 @@ python app.py
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ImageDescriber/
@@ -85,7 +85,7 @@ ImageDescriber/
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 For each image in the selected folder:
 
@@ -120,7 +120,7 @@ To enable GPU acceleration, set `N_GPU_LAYERS` to a positive number and install 
 
 ---
 
-## 📝 Notes
+## Notes
 
 - Original files are **only renamed**, never deleted or copied
 - The app works **fully offline** after models are downloaded
@@ -129,7 +129,7 @@ To enable GPU acceleration, set `N_GPU_LAYERS` to a positive number and install 
 
 ---
 
-## 🛠️ Manual Dependency Install (non-Windows)
+## Manual Dependency Install (non-Windows)
 
 ```bash
 pip install Pillow easyocr
